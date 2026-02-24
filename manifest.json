@@ -1,0 +1,14 @@
+{
+  "manifest_version": 3,
+  "name": "Zoom Recording Context Menu Enabler",
+  "version": "1.0",
+  "description": "Enables right-click context menu on Zoom recordings",
+  "content_scripts": [
+    {
+      "matches": ["https://*.zoom.us/rec/play/*"],
+      "js": ["content.js"],
+      "run_at": "document_start",
+      "all_frames": true
+    }
+  ]
+}
